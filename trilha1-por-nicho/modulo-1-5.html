@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M5 — Agente de voz Telynx · Agentes por Nicho</title><meta name="description" content="Configuração funcional — mantida original.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"M5 — Agente de voz Telynx · Agentes por Nicho","description":"Configuração funcional — mantida original.","inLanguage":"pt-BR"}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{dark:{900:'#111111',800:'#1a1a1a',700:'#242424',600:'#333333',400:'#888888',300:'#bbbbbb',200:'#dddddd'},primary:'#FACC15'}}}}</script>
+<style>body{font-family:ui-sans-serif,system-ui,sans-serif}
+.light-mode { background:#f8fafc; color:#334155; }
+.light-mode .bg-dark-900{background:#f1f5f9}.light-mode .bg-dark-800{background:#ffffff}
+.light-mode .bg-dark-700{background:#e2e8f0}.light-mode .border-dark-700,.light-mode .border-dark-600,.light-mode .border-dark-800{border-color:#cbd5e1}
+.light-mode .text-white{color:#0f172a}.light-mode .text-dark-300,.light-mode .text-dark-200{color:#334155}
+.light-mode .text-dark-400{color:#64748b}</style>
+<script>if(localStorage.getItem('tema')==='light')document.documentElement.classList.add('light-mode');</script>
+</head>
+<body class="bg-dark-900 text-dark-200 min-h-screen flex flex-col">
+<nav class="sticky top-0 z-40 backdrop-blur bg-dark-900/90 border-b border-dark-700">
+<div class="max-w-5xl mx-auto px-4 h-14 flex items-center gap-4">
+<a href="../index.html" class="font-black text-white tracking-tight">⚡ VOZ<span class="text-primary">COMERCIAL</span></a>
+<span class="text-dark-600 hidden sm:inline">|</span>
+          <a href="https://inema.club" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 text-sm font-medium hidden sm:inline">INEMA.CLUB</a>
+          <div class="hidden lg:flex items-center gap-2 overflow-x-auto ml-auto"><a href="../trilha1-por-nicho/index.html" class="text-xs px-3 py-1.5 rounded-full border border-dark-600 hover:border-emerald-400 transition whitespace-nowrap">🏢 Agentes por Nicho</a>
+<a href="../trilha2-vender/index.html" class="text-xs px-3 py-1.5 rounded-full border border-dark-600 hover:border-blue-400 transition whitespace-nowrap">💼 Venda o Serviço</a></div>
+<button id="toggleTema" class="ml-4 text-lg" title="Alternar tema">🌗</button>
+</div></nav>
+<main class="flex-1 max-w-5xl w-full mx-auto px-4 py-8">
+
+<div class="flex items-center gap-2 text-xs text-dark-400 mb-4 flex-wrap"><a href="../index.html" class="hover:text-primary">Início</a><span>/</span><a href="index.html" class="hover:text-primary">Agentes por Nicho</a><span>/</span><span class="text-dark-300">Módulo 5.5</span></div>
+<header class="bg-gradient-to-b from-emerald-500/20 to-transparent border border-emerald-500/30 rounded-2xl p-6 mb-8">
+<p class="text-xs text-emerald-400 font-bold mb-1">Agentes por Nicho · Módulo 5/6</p>
+<h1 class="text-2xl md:text-3xl font-black text-white mb-2">Agente de voz Telynx</h1>
+<p class="text-dark-300 text-sm">Configuração funcional — mantida original.</p>
+</header>
+<article class="prose-invert max-w-none"><ul class="list-disc pl-6 space-y-1.5 mb-4 text-dark-300"><li><strong>Seção:</strong> Voice Ai</li><li><strong>Link da aula:</strong> https://www.skool.com/aiworkshop-lite/classroom/5b3aa9e5?md=1a2cdd5105e240168c62ddf4d49433ce</li></ul>
+<h3 class="text-lg font-bold text-white mt-7 mb-3 flex items-center gap-2"><span class="w-1 h-5 bg-primary rounded-full inline-block"></span>Descrição</h3><p class="mb-4 text-dark-300 leading-relaxed">_(sem descrição)_</p><h3 class="text-lg font-bold text-white mt-7 mb-3 flex items-center gap-2"><span class="w-1 h-5 bg-primary rounded-full inline-block"></span>Recursos baixados</h3><ul class="list-disc pl-6 space-y-1.5 mb-4 text-dark-300"><li><code class="px-1 py-0.5 rounded bg-dark-700 text-primary">55-telynx-voice-agent.json</code> — Telynx Voice Agent.json (ok (10555 bytes))</li></ul>
+<h4 class="text-base font-bold text-white mt-5 mb-2">Texto de <code class="px-1 py-0.5 rounded bg-dark-700 text-primary">55-telynx-voice-agent.json</code></h4><div class="relative group"><button onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText);this.textContent='Copiado!';setTimeout(()=>this.textContent='Copiar',1500)" class="absolute right-2 top-2 z-10 text-xs px-2 py-1 rounded bg-dark-700 border border-dark-600 text-dark-200 opacity-0 group-hover:opacity-100 transition">Copiar</button><pre class="bg-dark-800 border border-dark-700 rounded-xl p-4 overflow-x-auto text-sm leading-relaxed mb-4"><code>{
+  &quot;name&quot;: &quot;Telynx Voice Agent&quot;,
+  &quot;nodes&quot;: [
+    {
+      &quot;parameters&quot;: {
+        &quot;content&quot;: &quot;# Call Lead on form submission\n&quot;,
+        &quot;height&quot;: 400,
+        &quot;width&quot;: 548,
+        &quot;color&quot;: 5
+      },
+      &quot;type&quot;: &quot;n8n-nodes-base.stickyNote&quot;,
+      &quot;typeVersion&quot;: 1,
+      &quot;position&quot;: [
+        0,
+        0
+      ],
+      &quot;id&quot;: &quot;0fd34de6-4f9e-4d19-a3c1-ac4dc0adbffd&quot;,
+      &quot;name&quot;: &quot;Sticky Note1&quot;
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;formTitle&quot;: &quot;Customer Inquiry &quot;,
+        &quot;formDescription&quot;: &quot;Please provide your contact details and the AI service you're looking for. &quot;,
+        &quot;formFields&quot;: {
+          &quot;values&quot;: [
+            {
+              &quot;fieldLabel&quot;: &quot;Name &quot;,
+              &quot;placeholder&quot;: &quot;John Doe &quot;,
+              &quot;requiredField&quot;: true
+            },
+            {
+              &quot;fieldLabel&quot;: &quot;Email &quot;,
+              &quot;fieldType&quot;: &quot;email&quot;,
+              &quot;placeholder&quot;: &quot;JohnDoe@gmail.com &quot;,
+              &quot;requiredField&quot;: true
+            },
+            {
+              &quot;fieldLabel&quot;: &quot;Phone Number &quot;,
+              &quot;fieldType&quot;: &quot;number&quot;,
+              &quot;placeholder&quot;: &quot;+15102253396 &quot;,
+              &quot;requiredField&quot;: true
+            },
+            {
+              &quot;fieldLabel&quot;: &quot;Budget &quot;,
+              &quot;fieldType&quot;: &quot;dropdown&quot;,
+              &quot;fieldOptions&quot;: {
+                &quot;values&quot;: [
+                  {
+                    &quot;option&quot;: &quot;$2,000 to $5,000 &quot;
+                  },
+                  {
+                    &quot;option&quot;: &quot;$5,000 to $10,000 &quot;
+                  },
+                  {
+                    &quot;option&quot;: &quot;$10,000 to $20,000 &quot;
+                  }
+                ]
+              },
+              &quot;requiredField&quot;: true
+            },
+            {
+              &quot;fieldLabel&quot;: &quot;Service &quot;,
+              &quot;fieldType&quot;: &quot;textarea&quot;,
+              &quot;placeholder&quot;: &quot;Please describe the service that you're looking for to implement in your business in as much detail as possible. &quot;,
+              &quot;requiredField&quot;: true
+            }
+          ]
+        },
+        &quot;options&quot;: {}
+      },
+      &quot;type&quot;: &quot;n8n-nodes-base.formTrigger&quot;,
+      &quot;typeVersion&quot;: 2.2,
+      &quot;position&quot;: [
+        112,
+        160
+      ],
+      &quot;id&quot;: &quot;046f736d-716b-4415-bd6b-2fad878c8f55&quot;,
+      &quot;name&quot;: &quot;On form submission&quot;,
+      &quot;webhookId&quot;: &quot;ca81210e-3ce0-45ef-976e-d7455a87e427&quot;
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;method&quot;: &quot;POST&quot;,
+        &quot;url&quot;: &quot;https://api.telnyx.com/v2/texml/calls/2791924442500958174&quot;,
+        &quot;sendHeaders&quot;: true,
+        &quot;headerParameters&quot;: {
+          &quot;parameters&quot;: [
+            {
+              &quot;name&quot;: &quot;Authorization&quot;,
+              &quot;value&quot;: &quot;Bearer KEY_SUA_CHAVE_TELNYX_AQUI&quot;
+            }
+          ]
+        },
+        &quot;sendBody&quot;: true,
+        &quot;specifyBody&quot;: &quot;json&quot;,
+        &quot;jsonBody&quot;: &quot;={\n\t\&quot;From\&quot;: \&quot;+15105611196\&quot;,\n\t\&quot;To\&quot;: \&quot;+{{ $json['Phone Number '] }}\&quot;,\n\t\&quot;AIAssistantDynamicVariables\&quot;: {\n\t\t\&quot;name\&quot;: \&quot;{{ $json['Name '] }}\&quot;,\n\t\t\&quot;phone_number\&quot;: \&quot;{{ $json['Phone Number '] }}\&quot;,\n\t\t\&quot;service\&quot;: \&quot;{{ $json['Service '] }}\&quot;,\n\t\t\&quot;service\&quot;: \&quot;{{ $json['Service '] }}\&quot;,\n\t\t\&quot;budget\&quot;: \&quot;{{ $json['Budget '] }}\&quot;,\n        \&quot;now\&quot;: \&quot;{{$now}}\&quot;\n\t  }\n}\n\n&quot;,
+        &quot;options&quot;: {}
+      },
+      &quot;type&quot;: &quot;n8n-nodes-base.httpRequest&quot;,
+      &quot;typeVersion&quot;: 4.2,
+      &quot;position&quot;: [
+        320,
+        160
+      ],
+      &quot;id&quot;: &quot;32dc044b-52a9-4ef6-b680-fa3e84025563&quot;,
+      &quot;name&quot;: &quot;Telynx&quot;
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;httpMethod&quot;: &quot;POST&quot;,
+        &quot;path&quot;: &quot;test&quot;,
+        &quot;responseMode&quot;: &quot;responseNode&quot;,
+        &quot;options&quot;: {}
+      },
+      &quot;type&quot;: &quot;n8n-nodes-base.webhook&quot;,
+      &quot;typeVersion&quot;: 2,
+      &quot;position&quot;: [
+        784,
+        32
+      ],
+      &quot;id&quot;: &quot;cadc12e0-83e6-4952-9c83-f2a5e3b2d9f2&quot;,
+      &quot;name&quot;: &quot;Webhook&quot;,
+      &quot;webhookId&quot;: &quot;85fff1c7-3aa5-41ce-8e86-035113ada4aa&quot;
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;respondWith&quot;: &quot;json&quot;,
+        &quot;responseBody&quot;: &quot;={\n  \&quot;status\&quot;: \&quot;{{ JSON.stringify($json.output).replace(/(^\\\&quot;|\\\&quot;$)/g, '') }}\&quot;\n}&quot;,
+        &quot;options&quot;: {}
+      },
+      &quot;type&quot;: &quot;n8n-nodes-base.respondToWebhook&quot;,
+      &quot;typeVersion&quot;: 1.1,
+      &quot;position&quot;: [
+        1328,
+        32
+      ],
+      &quot;id&quot;: &quot;cb271ad5-602a-47b9-97ff-48a9d86140f7&quot;,
+      &quot;name&quot;: &quot;Respond to Webhook&quot;
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;promptType&quot;: &quot;define&quot;,
+        &quot;text&quot;: &quot;=Name: {{ $json.body.name }}\nPhone: {{ $json.body.phone }}\nEmail: {{ $json.body.email }}\nDate: {{ $json.body.date }}\nTime: {{ $json.body.time }}\n\n{{ $json.query.request }}&quot;,
+        &quot;options&quot;: {
+          &quot;systemMessage&quot;: &quot;=You are a helpful assistant who responds to user's request in a fun, friendly but professional way. Today's date is {{ $now }}.\n\nGuidelines:\n\nBooking:\n- If an appointment is being requested, first check the Get_Events tool to see if that requested meeting time is available and if it is available then use the Book_Meeting tool to create the appointment and send the confirmation, if the time requested is not available, provide all the available times as a response for the user to select a new time. \n\nResponse Structure:\n- Keep responses concise, short, and relevant to the user’s question.  Do not share any personal information, the ID of the meeting, or any sensitive data. &quot;
+        }
+      },
+      &quot;type&quot;: &quot;@n8n/n8n-nodes-langchain.agent&quot;,
+      &quot;typeVersion&quot;: 1.7,
+      &quot;position&quot;: [
+        992,
+        32
+      ],
+      &quot;id&quot;: &quot;64ed3db5-2fa4-4e29-bfea-4e638cb1491e&quot;,
+      &quot;name&quot;: &quot;AI Agent&quot;
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;operation&quot;: &quot;getAll&quot;,
+        &quot;calendar&quot;: {
+          &quot;__rl&quot;: true,
+          &quot;value&quot;: &quot;zubair.trabzada@gmail.com&quot;,
+          &quot;mode&quot;: &quot;list&quot;,
+          &quot;cachedResultName&quot;: &quot;zubair.trabzada@gmail.com&quot;
+        },
+        &quot;returnAll&quot;: true,
+        &quot;options&quot;: {
+          &quot;timeMin&quot;: &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('After', `one day before the date the user requested`, 'string') }}&quot;,
+          &quot;timeMax&quot;: &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Before', `one day after the date the user requested`, 'string') }}&quot;
+        }
+      },
+      &quot;id&quot;: &quot;a413bb4d-909f-4eeb-8d11-a670c08f0d4b&quot;,
+      &quot;name&quot;: &quot;Get_Events&quot;,
+      &quot;type&quot;: &quot;n8n-nodes-base.googleCalendarTool&quot;,
+      &quot;typeVersion&quot;: 1.2,
+      &quot;position&quot;: [
+        1056,
+        288
+      ],
+      &quot;credentials&quot;: {
+        &quot;googleCalendarOAuth2Api&quot;: {
+          &quot;id&quot;: &quot;ooDdAehC422QioCi&quot;,
+          &quot;name&quot;: &quot;Google Calendar account&quot;
+        }
+      }
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;calendar&quot;: {
+          &quot;__rl&quot;: true,
+          &quot;value&quot;: &quot;zubair.trabzada@gmail.com&quot;,
+          &quot;mode&quot;: &quot;list&quot;,
+          &quot;cachedResultName&quot;: &quot;zubair.trabzada@gmail.com&quot;
+        },
+        &quot;start&quot;: &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Start', ``, 'string') }}&quot;,
+        &quot;end&quot;: &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('End', ``, 'string') }}&quot;,
+        &quot;useDefaultReminders&quot;: &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Use_Default_Reminders', ``, 'boolean') }}&quot;,
+        &quot;additionalFields&quot;: {
+          &quot;attendees&quot;: [
+            &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('attendees0_Attendees', `email of the attendee`, 'string') }}&quot;
+          ]
+        }
+      },
+      &quot;type&quot;: &quot;n8n-nodes-base.googleCalendarTool&quot;,
+      &quot;typeVersion&quot;: 1.3,
+      &quot;position&quot;: [
+        1200,
+        288
+      ],
+      &quot;id&quot;: &quot;a55299be-1052-4a62-96d4-957b4f2613e3&quot;,
+      &quot;name&quot;: &quot;Book_Meeting&quot;,
+      &quot;credentials&quot;: {
+        &quot;googleCalendarOAuth2Api&quot;: {
+          &quot;id&quot;: &quot;ooDdAehC422QioCi&quot;,
+          &quot;name&quot;: &quot;Google Calendar account&quot;
+        }
+      }
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;model&quot;: {
+          &quot;__rl&quot;: true,
+          &quot;value&quot;: &quot;gpt-4.1-mini&quot;,
+          &quot;mode&quot;: &quot;list&quot;,
+          &quot;cachedResultName&quot;: &quot;gpt-4.1-mini&quot;
+        },
+        &quot;options&quot;: {}
+      },
+      &quot;type&quot;: &quot;@n8n/n8n-nodes-langchain.lmChatOpenAi&quot;,
+      &quot;typeVersion&quot;: 1.2,
+      &quot;position&quot;: [
+        912,
+        304
+      ],
+      &quot;id&quot;: &quot;463deead-e1e8-4c74-bc5b-f4162ac606e1&quot;,
+      &quot;name&quot;: &quot;OpenAI Chat Model1&quot;,
+      &quot;credentials&quot;: {
+        &quot;openAiApi&quot;: {
+          &quot;id&quot;: &quot;zE5O89L0JjnRwfPU&quot;,
+          &quot;name&quot;: &quot;OpenAi account&quot;
+        }
+      }
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;content&quot;: &quot;# Check availability and book appointments. &quot;,
+        &quot;height&quot;: 560,
+        &quot;width&quot;: 852,
+        &quot;color&quot;: 6
+      },
+      &quot;type&quot;: &quot;n8n-nodes-base.stickyNote&quot;,
+      &quot;typeVersion&quot;: 1,
+      &quot;position&quot;: [
+        688,
+        -112
+      ],
+      &quot;id&quot;: &quot;3cf7d73f-c531-433c-bb10-168f518828f7&quot;,
+      &quot;name&quot;: &quot;Sticky Note&quot;
+    }
+  ],
+  &quot;pinData&quot;: {
+    &quot;On form submission&quot;: [
+      {
+        &quot;json&quot;: {
+          &quot;Name &quot;: &quot;Zubair Trabzada&quot;,
+          &quot;Email &quot;: &quot;zubair.trabzada@gmail.com&quot;,
+          &quot;Phone Number &quot;: 15107096913,
+          &quot;Budget &quot;: &quot;$5,000 to $10,000 &quot;,
+          &quot;Service &quot;: &quot;I own a kite surfing business in San Francisco and I'm looking to implement AI to automate the customer interactions. &quot;,
+          &quot;submittedAt&quot;: &quot;2025-05-09T19:09:23.314-07:00&quot;,
+          &quot;formMode&quot;: &quot;test&quot;
+        }
+      }
+    ]
+  },
+  &quot;connections&quot;: {
+    &quot;On form submission&quot;: {
+      &quot;main&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;Telynx&quot;,
+            &quot;type&quot;: &quot;main&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    },
+    &quot;Telynx&quot;: {
+      &quot;main&quot;: [
+        []
+      ]
+    },
+    &quot;Webhook&quot;: {
+      &quot;main&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;AI Agent&quot;,
+            &quot;type&quot;: &quot;main&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    },
+    &quot;AI Agent&quot;: {
+      &quot;main&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;Respond to Webhook&quot;,
+            &quot;type&quot;: &quot;main&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    },
+    &quot;Get_Events&quot;: {
+      &quot;ai_tool&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;AI Agent&quot;,
+            &quot;type&quot;: &quot;ai_tool&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    },
+    &quot;Book_Meeting&quot;: {
+      &quot;ai_tool&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;AI Agent&quot;,
+            &quot;type&quot;: &quot;ai_tool&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    },
+    &quot;OpenAI Chat Model1&quot;: {
+      &quot;ai_languageModel&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;AI Agent&quot;,
+            &quot;type&quot;: &quot;ai_languageModel&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    }
+  },
+  &quot;active&quot;: false,
+  &quot;settings&quot;: {
+    &quot;executionOrder&quot;: &quot;v1&quot;
+  },
+  &quot;versionId&quot;: &quot;bfdd9cb4-4a1f-4b5e-a9d0-28c29a5196c1&quot;,
+  &quot;meta&quot;: {
+    &quot;templateCredsSetupCompleted&quot;: true,
+    &quot;instanceId&quot;: &quot;5f99b345c3a4501a22438ba5962ff6685e5e97ee4bd0a17cc04a19ed072b5c2a&quot;
+  },
+  &quot;id&quot;: &quot;LUYvbx1UH70h5hzR&quot;,
+  &quot;tags&quot;: []
+}</code></pre></div></article>
+<div class="flex items-center justify-between mt-10 pt-6 border-t border-dark-700"><a href="modulo-1-4.html" class="text-left px-4 py-3 rounded-xl bg-dark-800 border border-dark-700 hover:border-emerald-400 transition"><div class="text-xs text-dark-400">← Anterior</div><div class="text-sm text-white font-semibold truncate max-w-[180px]">Agente de consultas (ElevenLabs)</div></a><a href="modulo-1-6.html" class="text-right px-4 py-3 rounded-xl bg-dark-800 border border-dark-700 hover:border-emerald-400 transition"><div class="text-xs text-dark-400">Próximo →</div><div class="text-sm text-white font-semibold truncate max-w-[180px]">Upsell com GPT Realtime — spa</div></a></div>
+</main>
+<footer class="border-t border-dark-700 mt-16 py-8 text-center text-sm text-dark-400">
+<p>Material de estudo traduzido para fins educacionais.</p>
+<p class="mt-2"><a href="https://inema.club" class="text-primary hover:underline">INEMA.CLUB</a></p>
+</footer>
+<script>
+document.getElementById('toggleTema').addEventListener('click',()=>{
+const el=document.documentElement;el.classList.toggle('light-mode');
+localStorage.setItem('tema',el.classList.contains('light-mode')?'light':'dark');});
+</script>
+</body></html>

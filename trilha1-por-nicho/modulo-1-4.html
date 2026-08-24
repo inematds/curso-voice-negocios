@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M4 — Agente de consultas (ElevenLabs) · Agentes por Nicho</title><meta name="description" content="Configuração funcional — mantida original.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"M4 — Agente de consultas (ElevenLabs) · Agentes por Nicho","description":"Configuração funcional — mantida original.","inLanguage":"pt-BR"}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{dark:{900:'#111111',800:'#1a1a1a',700:'#242424',600:'#333333',400:'#888888',300:'#bbbbbb',200:'#dddddd'},primary:'#FACC15'}}}}</script>
+<style>body{font-family:ui-sans-serif,system-ui,sans-serif}
+.light-mode { background:#f8fafc; color:#334155; }
+.light-mode .bg-dark-900{background:#f1f5f9}.light-mode .bg-dark-800{background:#ffffff}
+.light-mode .bg-dark-700{background:#e2e8f0}.light-mode .border-dark-700,.light-mode .border-dark-600,.light-mode .border-dark-800{border-color:#cbd5e1}
+.light-mode .text-white{color:#0f172a}.light-mode .text-dark-300,.light-mode .text-dark-200{color:#334155}
+.light-mode .text-dark-400{color:#64748b}</style>
+<script>if(localStorage.getItem('tema')==='light')document.documentElement.classList.add('light-mode');</script>
+</head>
+<body class="bg-dark-900 text-dark-200 min-h-screen flex flex-col">
+<nav class="sticky top-0 z-40 backdrop-blur bg-dark-900/90 border-b border-dark-700">
+<div class="max-w-5xl mx-auto px-4 h-14 flex items-center gap-4">
+<a href="../index.html" class="font-black text-white tracking-tight">⚡ VOZ<span class="text-primary">COMERCIAL</span></a>
+<span class="text-dark-600 hidden sm:inline">|</span>
+          <a href="https://inema.club" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 text-sm font-medium hidden sm:inline">INEMA.CLUB</a>
+          <div class="hidden lg:flex items-center gap-2 overflow-x-auto ml-auto"><a href="../trilha1-por-nicho/index.html" class="text-xs px-3 py-1.5 rounded-full border border-dark-600 hover:border-emerald-400 transition whitespace-nowrap">🏢 Agentes por Nicho</a>
+<a href="../trilha2-vender/index.html" class="text-xs px-3 py-1.5 rounded-full border border-dark-600 hover:border-blue-400 transition whitespace-nowrap">💼 Venda o Serviço</a></div>
+<button id="toggleTema" class="ml-4 text-lg" title="Alternar tema">🌗</button>
+</div></nav>
+<main class="flex-1 max-w-5xl w-full mx-auto px-4 py-8">
+
+<div class="flex items-center gap-2 text-xs text-dark-400 mb-4 flex-wrap"><a href="../index.html" class="hover:text-primary">Início</a><span>/</span><a href="index.html" class="hover:text-primary">Agentes por Nicho</a><span>/</span><span class="text-dark-300">Módulo 4.4</span></div>
+<header class="bg-gradient-to-b from-emerald-500/20 to-transparent border border-emerald-500/30 rounded-2xl p-6 mb-8">
+<p class="text-xs text-emerald-400 font-bold mb-1">Agentes por Nicho · Módulo 4/6</p>
+<h1 class="text-2xl md:text-3xl font-black text-white mb-2">Agente de consultas (ElevenLabs)</h1>
+<p class="text-dark-300 text-sm">Configuração funcional — mantida original.</p>
+</header>
+<article class="prose-invert max-w-none"><ul class="list-disc pl-6 space-y-1.5 mb-4 text-dark-300"><li><strong>Seção:</strong> Voice Ai</li><li><strong>Link da aula:</strong> https://www.skool.com/aiworkshop-lite/classroom/5b3aa9e5?md=5ce33501dc72452f99e08a3b378b0482</li></ul>
+<h3 class="text-lg font-bold text-white mt-7 mb-3 flex items-center gap-2"><span class="w-1 h-5 bg-primary rounded-full inline-block"></span>Descrição</h3><p class="mb-4 text-dark-300 leading-relaxed">_(sem descrição)_</p><h3 class="text-lg font-bold text-white mt-7 mb-3 flex items-center gap-2"><span class="w-1 h-5 bg-primary rounded-full inline-block"></span>Recursos baixados</h3><ul class="list-disc pl-6 space-y-1.5 mb-4 text-dark-300"><li><code class="px-1 py-0.5 rounded bg-dark-700 text-primary">54-11labs-consultation-voice-agent.json</code> — Eleven Labs Agent.json (ok (6856 bytes))</li></ul>
+<h4 class="text-base font-bold text-white mt-5 mb-2">Texto de <code class="px-1 py-0.5 rounded bg-dark-700 text-primary">54-11labs-consultation-voice-agent.json</code></h4><div class="relative group"><button onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText);this.textContent='Copiado!';setTimeout(()=>this.textContent='Copiar',1500)" class="absolute right-2 top-2 z-10 text-xs px-2 py-1 rounded bg-dark-700 border border-dark-600 text-dark-200 opacity-0 group-hover:opacity-100 transition">Copiar</button><pre class="bg-dark-800 border border-dark-700 rounded-xl p-4 overflow-x-auto text-sm leading-relaxed mb-4"><code>{
+  &quot;name&quot;: &quot;Eleven Labs Agent&quot;,
+  &quot;nodes&quot;: [
+    {
+      &quot;parameters&quot;: {
+        &quot;httpMethod&quot;: &quot;POST&quot;,
+        &quot;path&quot;: &quot;test&quot;,
+        &quot;responseMode&quot;: &quot;responseNode&quot;,
+        &quot;options&quot;: {}
+      },
+      &quot;type&quot;: &quot;n8n-nodes-base.webhook&quot;,
+      &quot;typeVersion&quot;: 2,
+      &quot;position&quot;: [
+        -544,
+        -272
+      ],
+      &quot;id&quot;: &quot;2325c117-3fb9-4a6d-beb0-641483f054b7&quot;,
+      &quot;name&quot;: &quot;Webhook&quot;,
+      &quot;webhookId&quot;: &quot;85fff1c7-3aa5-41ce-8e86-035113ada4aa&quot;
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;respondWith&quot;: &quot;json&quot;,
+        &quot;responseBody&quot;: &quot;={\n  \&quot;status\&quot;: \&quot;{{ JSON.stringify($json.output).replace(/(^\\\&quot;|\\\&quot;$)/g, '') }}\&quot;\n}&quot;,
+        &quot;options&quot;: {}
+      },
+      &quot;type&quot;: &quot;n8n-nodes-base.respondToWebhook&quot;,
+      &quot;typeVersion&quot;: 1.1,
+      &quot;position&quot;: [
+        80,
+        -272
+      ],
+      &quot;id&quot;: &quot;202f6151-d4ad-4296-b157-6dc03e5b148d&quot;,
+      &quot;name&quot;: &quot;Respond to Webhook&quot;
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;promptType&quot;: &quot;define&quot;,
+        &quot;text&quot;: &quot;=Name: {{ $json.body.name }}\nPhone: {{ $json.body.phone }}\nEmail: {{ $json.body.email }}\nDate: {{ $json.body.date }}\nTime: {{ $json.body.time }}\n\n{{ $json.query.request }}&quot;,
+        &quot;options&quot;: {
+          &quot;systemMessage&quot;: &quot;=You are a helpful assistant who responds to user's request in a fun, friendly but professional way. Today's date is {{ $now }}.\n\nGuidelines:\n\nWeb and Information Queries:\n- For general information queries, use the SerpAPI tool to fetch results from Google Search.\n\nBooking:\n- If an appointment is being requested, first check the Get_Events tool to see if that requested meeting time is available and if it is available then use the Book_Meeting tool to create the appointment and send the confirmation, if the time requested is not available, provide all the available times as a response for the user to select a new time. \n\nResponse Structure:\n- Keep responses concise, short, and relevant to the user’s question.  Do not share any personal information, the ID of the meeting, or any sensitive data. &quot;
+        }
+      },
+      &quot;type&quot;: &quot;@n8n/n8n-nodes-langchain.agent&quot;,
+      &quot;typeVersion&quot;: 1.7,
+      &quot;position&quot;: [
+        -288,
+        -272
+      ],
+      &quot;id&quot;: &quot;6efb7f52-e38b-4df8-834a-1863588194d1&quot;,
+      &quot;name&quot;: &quot;AI Agent&quot;
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;options&quot;: {}
+      },
+      &quot;type&quot;: &quot;@n8n/n8n-nodes-langchain.toolSerpApi&quot;,
+      &quot;typeVersion&quot;: 1,
+      &quot;position&quot;: [
+        -48,
+        0
+      ],
+      &quot;id&quot;: &quot;066ed73f-4593-4e2d-8419-7fe03c72a59b&quot;,
+      &quot;name&quot;: &quot;SerpAPI&quot;,
+      &quot;credentials&quot;: {
+        &quot;serpApi&quot;: {
+          &quot;id&quot;: &quot;ACLipGmNmiDm3NNN&quot;,
+          &quot;name&quot;: &quot;SerpAPI account&quot;
+        }
+      }
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;model&quot;: {
+          &quot;__rl&quot;: true,
+          &quot;value&quot;: &quot;gpt-4.1-mini&quot;,
+          &quot;mode&quot;: &quot;list&quot;,
+          &quot;cachedResultName&quot;: &quot;gpt-4.1-mini&quot;
+        },
+        &quot;options&quot;: {}
+      },
+      &quot;type&quot;: &quot;@n8n/n8n-nodes-langchain.lmChatOpenAi&quot;,
+      &quot;typeVersion&quot;: 1.2,
+      &quot;position&quot;: [
+        -496,
+        0
+      ],
+      &quot;id&quot;: &quot;ab68e09a-1d81-4b36-aa6c-9a42978c2000&quot;,
+      &quot;name&quot;: &quot;OpenAI Chat Model&quot;,
+      &quot;credentials&quot;: {
+        &quot;openAiApi&quot;: {
+          &quot;id&quot;: &quot;zE5O89L0JjnRwfPU&quot;,
+          &quot;name&quot;: &quot;OpenAi account&quot;
+        }
+      }
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;operation&quot;: &quot;getAll&quot;,
+        &quot;calendar&quot;: {
+          &quot;__rl&quot;: true,
+          &quot;value&quot;: &quot;zubair.trabzada@gmail.com&quot;,
+          &quot;mode&quot;: &quot;list&quot;,
+          &quot;cachedResultName&quot;: &quot;zubair.trabzada@gmail.com&quot;
+        },
+        &quot;returnAll&quot;: true,
+        &quot;options&quot;: {
+          &quot;timeMin&quot;: &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('After', `one day before the date the user requested`, 'string') }}&quot;,
+          &quot;timeMax&quot;: &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Before', `one day after the date the user requested`, 'string') }}&quot;
+        }
+      },
+      &quot;id&quot;: &quot;30f51d67-2fe8-4902-94c5-99775cbba0f6&quot;,
+      &quot;name&quot;: &quot;Get_Events&quot;,
+      &quot;type&quot;: &quot;n8n-nodes-base.googleCalendarTool&quot;,
+      &quot;typeVersion&quot;: 1.2,
+      &quot;position&quot;: [
+        -336,
+        0
+      ],
+      &quot;credentials&quot;: {
+        &quot;googleCalendarOAuth2Api&quot;: {
+          &quot;id&quot;: &quot;ooDdAehC422QioCi&quot;,
+          &quot;name&quot;: &quot;Google Calendar account&quot;
+        }
+      }
+    },
+    {
+      &quot;parameters&quot;: {
+        &quot;calendar&quot;: {
+          &quot;__rl&quot;: true,
+          &quot;value&quot;: &quot;zubair.trabzada@gmail.com&quot;,
+          &quot;mode&quot;: &quot;list&quot;,
+          &quot;cachedResultName&quot;: &quot;zubair.trabzada@gmail.com&quot;
+        },
+        &quot;start&quot;: &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Start', ``, 'string') }}&quot;,
+        &quot;end&quot;: &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('End', ``, 'string') }}&quot;,
+        &quot;useDefaultReminders&quot;: &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Use_Default_Reminders', ``, 'boolean') }}&quot;,
+        &quot;additionalFields&quot;: {
+          &quot;attendees&quot;: [
+            &quot;={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('attendees0_Attendees', `email of the attendee`, 'string') }}&quot;
+          ]
+        }
+      },
+      &quot;type&quot;: &quot;n8n-nodes-base.googleCalendarTool&quot;,
+      &quot;typeVersion&quot;: 1.3,
+      &quot;position&quot;: [
+        -192,
+        0
+      ],
+      &quot;id&quot;: &quot;4f0acfcc-61f7-4efa-b431-47d38e9ec1a7&quot;,
+      &quot;name&quot;: &quot;Book_Meeting&quot;,
+      &quot;credentials&quot;: {
+        &quot;googleCalendarOAuth2Api&quot;: {
+          &quot;id&quot;: &quot;ooDdAehC422QioCi&quot;,
+          &quot;name&quot;: &quot;Google Calendar account&quot;
+        }
+      }
+    }
+  ],
+  &quot;pinData&quot;: {},
+  &quot;connections&quot;: {
+    &quot;Webhook&quot;: {
+      &quot;main&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;AI Agent&quot;,
+            &quot;type&quot;: &quot;main&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    },
+    &quot;AI Agent&quot;: {
+      &quot;main&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;Respond to Webhook&quot;,
+            &quot;type&quot;: &quot;main&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    },
+    &quot;SerpAPI&quot;: {
+      &quot;ai_tool&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;AI Agent&quot;,
+            &quot;type&quot;: &quot;ai_tool&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    },
+    &quot;OpenAI Chat Model&quot;: {
+      &quot;ai_languageModel&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;AI Agent&quot;,
+            &quot;type&quot;: &quot;ai_languageModel&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    },
+    &quot;Get_Events&quot;: {
+      &quot;ai_tool&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;AI Agent&quot;,
+            &quot;type&quot;: &quot;ai_tool&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    },
+    &quot;Book_Meeting&quot;: {
+      &quot;ai_tool&quot;: [
+        [
+          {
+            &quot;node&quot;: &quot;AI Agent&quot;,
+            &quot;type&quot;: &quot;ai_tool&quot;,
+            &quot;index&quot;: 0
+          }
+        ]
+      ]
+    }
+  },
+  &quot;active&quot;: false,
+  &quot;settings&quot;: {
+    &quot;executionOrder&quot;: &quot;v1&quot;,
+    &quot;callerPolicy&quot;: &quot;workflowsFromSameOwner&quot;
+  },
+  &quot;versionId&quot;: &quot;82ab964e-83cc-4d72-974a-097bc4761e18&quot;,
+  &quot;meta&quot;: {
+    &quot;templateCredsSetupCompleted&quot;: true,
+    &quot;instanceId&quot;: &quot;5f99b345c3a4501a22438ba5962ff6685e5e97ee4bd0a17cc04a19ed072b5c2a&quot;
+  },
+  &quot;id&quot;: &quot;oeHODug86I91DcA9&quot;,
+  &quot;tags&quot;: []
+}</code></pre></div></article>
+<div class="flex items-center justify-between mt-10 pt-6 border-t border-dark-700"><a href="modulo-1-3.html" class="text-left px-4 py-3 rounded-xl bg-dark-800 border border-dark-700 hover:border-emerald-400 transition"><div class="text-xs text-dark-400">← Anterior</div><div class="text-sm text-white font-semibold truncate max-w-[180px]">Agente de voz multilíngue</div></a><a href="modulo-1-5.html" class="text-right px-4 py-3 rounded-xl bg-dark-800 border border-dark-700 hover:border-emerald-400 transition"><div class="text-xs text-dark-400">Próximo →</div><div class="text-sm text-white font-semibold truncate max-w-[180px]">Agente de voz Telynx</div></a></div>
+</main>
+<footer class="border-t border-dark-700 mt-16 py-8 text-center text-sm text-dark-400">
+<p>Material de estudo traduzido para fins educacionais.</p>
+<p class="mt-2"><a href="https://inema.club" class="text-primary hover:underline">INEMA.CLUB</a></p>
+</footer>
+<script>
+document.getElementById('toggleTema').addEventListener('click',()=>{
+const el=document.documentElement;el.classList.toggle('light-mode');
+localStorage.setItem('tema',el.classList.contains('light-mode')?'light':'dark');});
+</script>
+</body></html>
